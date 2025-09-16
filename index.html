@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي | مرحباً بكم</title>
+    <style>
+        /* تنسيقات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* رأس الصفحة */
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* المحتوى الرئيسي */
+        main {
+            padding: 30px;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        /* القوائم */
+        ul {
+            list-style-type: none;
+            padding: 0 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-right: 4px solid #3498db;
+        }
+        
+        /* الأزرار */
+        .button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin: 10px 5px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .button:hover {
+            background: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* تذييل الصفحة */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        /* قسم الوسائط */
+        .media {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .media img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* للتكيف مع الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .button {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>مرحباً بكم في موقعي</h1>
+            <p>هذا موقعي الشخصي الذي أنشأته باستخدام HTML و CSS</p>
+        </header>
+        
+        <main>
+            <section>
+                <h2>معلومات عني</h2>
+                <p>أهلاً وسهلاً بكم! أنا مطور ويب مبتدئ وأتعلم كيفية إنشاء مواقع ويب جميلة وتفاعلية.</p>
+                <p>هذا الموقع هو أحد مشاريعي الأولى التي أنشأتها من الصفر.</p>
+            </section>
+            
+            <section>
+                <h2>مهاراتي</h2>
+                <ul>
+                    <li>تصميم وتطوير مواقع الويب</li>
+                    <li>HTML و CSS</li>
+                    <li>JavaScript أساسي</li>
+                    <li>تصميم responsive يتكيف مع جميع الشاشات</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>مشاريعي</h2>
+                <p>هذه بعض المشاريع التي أعمل عليها:</p>
+                <ul>
+                    <li>موقع شخصي</li>
+                    <li>صفحة هبوط لمنتج</li>
+                    <li>مدونة شخصية</li>
+                    <li>متجر إلكتروني بسيط</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>اتصل بي</h2>
+                <p>يمكنك التواصل معي عبر الوسائل التالية:</p>
+                <a href="#" class="button">البريد الإلكتروني</a>
+                <a href="#" class="button">تويتر</a>
+                <a href="#" class="button">LinkedIn</a>
+            </section>
+            
+            <section>
+                <h2>معرض الصور</h2>
+                <div class="media">
+                    <img src="https://via.placeholder.com/300x200?text=صورة+1" alt="صورة مثال 1">
+                    <img src="https://via.placeholder.com/300x200?text=صورة+2" alt="صورة مثال 2">
+                    <img src="https://via.placeholder.com/300x200?text=صورة+3" alt="صورة مثال 3">
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2023 جميع الحقوق محفوظة | موقعي الشخصي</p>
+            <p>تم إنشاؤه بـ HTML و CSS</p>
+        </footer>
+    </div>
+</body>
+</html>
